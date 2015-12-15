@@ -36,7 +36,7 @@ function amplify_customize_register( $wp_customize ) {
             <h3 style="padding: 10px; border: 1px solid #DF7B7B; color: #DF7B7B;"><?php echo esc_html( $this->label ); ?></h3>
         <?php
         }
-    }    
+    }
 
     //___General___//
     $wp_customize->add_section(
@@ -100,7 +100,7 @@ function amplify_customize_register( $wp_customize ) {
         'section'  => 'amplify_header',
         'settings' => 'header_style',
         'priority' => 10,
-    ) ) ); 
+    ) ) );
 
     //Logo Upload
     $wp_customize->add_setting(
@@ -131,7 +131,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '200',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'logo_size', array(
         'type'        => 'number',
@@ -167,13 +167,13 @@ function amplify_customize_register( $wp_customize ) {
                 'show-title'  => __( 'Logo plus site title&amp;description', 'amplify' ),
             ),
         )
-    );          
+    );
     //Divider
     $wp_customize->add_control( new Amplify_Divider( $wp_customize, 'site_logo_divider', array(
         'section'  => 'amplify_header',
         'settings' => 'header_style',
         'priority' => 13,
-    ) ) ); 
+    ) ) );
 
     //Padding
     $wp_customize->add_setting(
@@ -182,7 +182,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '150',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'branding_padding', array(
         'type'        => 'number',
@@ -209,7 +209,7 @@ function amplify_customize_register( $wp_customize ) {
         array(
             'sanitize_callback' => 'amplify_sanitize_checkbox',
 			'default' => 1,
-        )       
+        )
     );
     $wp_customize->add_control(
         'full_header',
@@ -219,14 +219,14 @@ function amplify_customize_register( $wp_customize ) {
             'section'   => 'amplify_header',
             'priority'  => 16,
         )
-    );	
+    );
     //Center
     $wp_customize->add_setting(
         'branding_center',
         array(
             'sanitize_callback' => 'amplify_sanitize_checkbox',
 			'default' => 1
-        )       
+        )
     );
     $wp_customize->add_control(
         'branding_center',
@@ -242,7 +242,7 @@ function amplify_customize_register( $wp_customize ) {
         'section'  => 'amplify_header',
         'settings' => 'branding_center',
         'priority' => 18,
-    ) ) );    
+    ) ) );
 
     //Search form
     $wp_customize->add_setting(
@@ -289,7 +289,7 @@ function amplify_customize_register( $wp_customize ) {
         'settings' => 'amplify_options[titles]',
         'priority' => 9
         ) )
-    );     
+    );
 	// Blog layout
     $wp_customize->add_setting(
         'blog_layout',
@@ -311,14 +311,14 @@ function amplify_customize_register( $wp_customize ) {
                 'masonry'      => __( 'Masonry (grid style)', 'amplify' )
             ),
         )
-    );	
+    );
     //Full content posts
     $wp_customize->add_setting(
       'full_content',
       array(
         'sanitize_callback' => 'amplify_sanitize_checkbox',
-        'default' => 0,     
-      )   
+        'default' => 0,
+      )
     );
     $wp_customize->add_control(
         'full_content',
@@ -335,7 +335,7 @@ function amplify_customize_register( $wp_customize ) {
         array(
             'sanitize_callback' => 'absint',
             'default'           => '55',
-        )       
+        )
     );
     $wp_customize->add_control( 'exc_lenght', array(
         'type'        => 'number',
@@ -349,14 +349,14 @@ function amplify_customize_register( $wp_customize ) {
             'step'  => 5,
             'style' => 'padding: 15px;',
         ),
-    ) );   
+    ) );
     //Hide date
     $wp_customize->add_setting(
       'amplify_date',
       array(
         'sanitize_callback' => 'amplify_sanitize_checkbox',
-        'default' => 0,     
-      )   
+        'default' => 0,
+      )
     );
     $wp_customize->add_control(
       'amplify_date',
@@ -372,8 +372,8 @@ function amplify_customize_register( $wp_customize ) {
       'amplify_cats',
       array(
         'sanitize_callback' => 'amplify_sanitize_checkbox',
-        'default' => 0,     
-      )   
+        'default' => 0,
+      )
     );
     $wp_customize->add_control(
       'amplify_cats',
@@ -403,8 +403,8 @@ function amplify_customize_register( $wp_customize ) {
       'amplify_single_date',
       array(
         'sanitize_callback' => 'amplify_sanitize_checkbox',
-        'default' => 0,     
-      )   
+        'default' => 0,
+      )
     );
     $wp_customize->add_control(
       'amplify_single_date',
@@ -420,8 +420,8 @@ function amplify_customize_register( $wp_customize ) {
       'amplify_single_cats',
       array(
         'sanitize_callback' => 'amplify_sanitize_checkbox',
-        'default' => 0,     
-      )   
+        'default' => 0,
+      )
     );
     $wp_customize->add_control(
       'amplify_single_cats',
@@ -437,8 +437,8 @@ function amplify_customize_register( $wp_customize ) {
       'amplify_single_tags',
       array(
         'sanitize_callback' => 'amplify_sanitize_checkbox',
-        'default' => 0,     
-      )   
+        'default' => 0,
+      )
     );
     $wp_customize->add_control(
       'amplify_single_tags',
@@ -454,7 +454,7 @@ function amplify_customize_register( $wp_customize ) {
         'boxed_title',
         array(
             'sanitize_callback' => 'amplify_sanitize_checkbox',
-        )       
+        )
     );
     $wp_customize->add_control(
         'boxed_title',
@@ -470,7 +470,7 @@ function amplify_customize_register( $wp_customize ) {
         'fullwidth_single',
         array(
             'sanitize_callback' => 'amplify_sanitize_checkbox',
-        )       
+        )
     );
     $wp_customize->add_control(
         'fullwidth_single',
@@ -480,7 +480,7 @@ function amplify_customize_register( $wp_customize ) {
             'section'   => 'blog_options',
             'priority'  => 21,
         )
-    );    
+    );
 	//Title banner padding
     $wp_customize->add_setting(
         'banner_padding',
@@ -501,7 +501,7 @@ function amplify_customize_register( $wp_customize ) {
             'step'  => 5,
             'style' => 'margin-bottom: 15px; padding: 10px;',
         ),
-    ) );	
+    ) );
     //___Fonts___//
     $wp_customize->add_section(
         'amplify_fonts',
@@ -524,7 +524,7 @@ function amplify_customize_register( $wp_customize ) {
         'settings' => 'amplify_options[titles]',
         'priority' => 10
         ) )
-    );     
+    );
     //Body fonts
     $wp_customize->add_setting(
         'body_font_name',
@@ -572,7 +572,7 @@ function amplify_customize_register( $wp_customize ) {
         'settings' => 'amplify_options[titles]',
         'priority' => 13
         ) )
-    );    
+    );
     //Headings fonts
     $wp_customize->add_setting(
         'headings_font_name',
@@ -620,7 +620,7 @@ function amplify_customize_register( $wp_customize ) {
         'settings' => 'amplify_options[titles]',
         'priority' => 16
         ) )
-    );  
+    );
     // Site title
     $wp_customize->add_setting(
         'site_title_size',
@@ -628,7 +628,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '62',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'site_title_size', array(
         'type'        => 'number',
@@ -641,7 +641,7 @@ function amplify_customize_register( $wp_customize ) {
             'step'  => 1,
             'style' => 'margin-bottom: 15px; padding: 10px;',
         ),
-    ) ); 
+    ) );
     // Site description
     $wp_customize->add_setting(
         'site_desc_size',
@@ -649,7 +649,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '18',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'site_desc_size', array(
         'type'        => 'number',
@@ -662,7 +662,7 @@ function amplify_customize_register( $wp_customize ) {
             'step'  => 1,
             'style' => 'margin-bottom: 15px; padding: 10px;',
         ),
-    ) );  
+    ) );
     // Nav menu
     $wp_customize->add_setting(
         'menu_size',
@@ -670,7 +670,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '16',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'menu_size', array(
         'type'        => 'number',
@@ -683,7 +683,7 @@ function amplify_customize_register( $wp_customize ) {
             'step'  => 1,
             'style' => 'margin-bottom: 15px; padding: 10px;',
         ),
-    ) );              
+    ) );
     //H1 size
     $wp_customize->add_setting(
         'h1_size',
@@ -691,7 +691,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '36',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h1_size', array(
         'type'        => 'number',
@@ -712,7 +712,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '30',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h2_size', array(
         'type'        => 'number',
@@ -733,7 +733,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '24',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h3_size', array(
         'type'        => 'number',
@@ -754,7 +754,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '18',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h4_size', array(
         'type'        => 'number',
@@ -775,7 +775,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '14',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h5_size', array(
         'type'        => 'number',
@@ -796,7 +796,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '12',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'h6_size', array(
         'type'        => 'number',
@@ -817,7 +817,7 @@ function amplify_customize_register( $wp_customize ) {
             'sanitize_callback' => 'absint',
             'default'           => '16',
             'transport'         => 'postMessage'
-        )       
+        )
     );
     $wp_customize->add_control( 'body_size', array(
         'type'        => 'number',
@@ -830,7 +830,7 @@ function amplify_customize_register( $wp_customize ) {
             'step'  => 1,
             'style' => 'margin-bottom: 15px; padding: 10px;',
         ),
-    ) ); 
+    ) );
     //___Colors___//
     //Primary color
     $wp_customize->add_setting(
@@ -913,7 +913,7 @@ function amplify_customize_register( $wp_customize ) {
                 'priority' => 16
             )
         )
-    ); 
+    );
     //Footer
     $wp_customize->add_setting(
         'footer_color',
@@ -934,7 +934,7 @@ function amplify_customize_register( $wp_customize ) {
                 'priority' => 17
             )
         )
-    );                              	
+    );
 }
 add_action( 'customize_register', 'amplify_customize_register' );
 
@@ -998,7 +998,7 @@ function amplify_sanitize_search( $input ) {
     } else {
         return '';
     }
-}   
+}
 //Text
 function amplify_sanitize_text( $input ) {
     return wp_kses_post( force_balance_tags( $input ) );
@@ -1010,3 +1010,14 @@ function amplify_customize_preview_js() {
 	wp_enqueue_script( 'amplify_customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20130508', true );
 }
 add_action( 'customize_preview_init', 'amplify_customize_preview_js' );
+
+function amplify_registers() {
+	wp_enqueue_script( 'amplify_customizer_script', get_template_directory_uri() . '/js/amplify_customizer.js', array("jquery"), '20120206', true  );
+
+	wp_localize_script( 'amplify_customizer_script', 'amplifyCustomizerObject', array(
+		'github'				=> __('GitHub','amplify'),
+		'review'				=> __('Leave a Review', 'amplify'),
+		'documentation'	=> __('Documentation', 'amplify')
+		) );
+}
+add_action( 'customize_controls_enqueue_scripts', 'amplify_registers' );
