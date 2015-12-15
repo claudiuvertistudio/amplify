@@ -19,12 +19,12 @@
 			<nav class="social-navigation clearfix col-md-12">
 				<?php wp_nav_menu( array( 'theme_location' => 'social', 'link_before' => '<span class="screen-reader-text">', 'link_after' => '</span>', 'menu_class' => 'menu clearfix', 'fallback_cb' => false ) ); ?>
 			</nav>
-			<?php endif; ?>					
+			<?php endif; ?>
 			<div class="site-info col-md-12">
 				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'amplify' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'amplify' ), 'WordPress' ); ?></a>
 				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %2$s by %1$s.', 'amplify' ), 'FlyFreeMedia', '<a href="http://flyfreemedia.com/themes/amplify" rel="designer">Amplify</a>' ); ?>
-			</div><!-- .site-info -->				
+				<?php printf( __( 'Theme: %2$s by %1$s.', 'amplify' ), 'JustFreeThemes', '<a href="http://justfreethemes.com/amplify/" rel="nofollow">Amplify</a>' ); ?>
+			</div><!-- .site-info -->
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
