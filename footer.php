@@ -21,7 +21,7 @@
 			</nav>
 			<?php endif; ?>
 			<div class="site-info col-md-12">
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'amplify' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'amplify' ), 'WordPress' ); ?></a>
+				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'amplify' ) ); ?>" rel="nofollow"><?php printf( __( 'Proudly powered by %s', 'amplify' ), 'WordPress' ); ?></a>
 				<span class="sep"> | </span>
 				<?php printf( __( 'Theme: %2$s by %1$s.', 'amplify' ), 'JustFreeThemes', '<a href="http://justfreethemes.com/amplify/" rel="nofollow">Amplify</a>' ); ?>
 			</div><!-- .site-info -->
