@@ -1,8 +1,8 @@
 /*
 Theme Name: Amplify
-Theme URI: http://flyfreemedia.com/themes/amplify
-Author: Fly Free Media
-Author URI: http://flyfreemedia.com/blog
+Theme URI: http://justfreethemes.com/amplify
+Author: JustFreeThemes
+Author URI: http://justfreethemes.com/
 Description: Amplify is a highly customizable responsive theme meant for individuals or companies that want to create a smashing online presence. Amplify lets you use any font from Google Fonts with custom font sizes, has many color options and provides lots of page templates so you can easily build the website you want. Also, with Amplify you can build a filterable portfolio based on Jetpack Custom content module and you can also build a great resume and skills page. Three blog layouts are available and also the ability to hide various elements is provided. See the demo here: http://demo.flyfreemedia.com/amplify
 Version: 1.02
 License: GNU General Public License v2 or later
@@ -460,7 +460,7 @@ Widgets
 }
 .widget_pages li::before {
 	content: '\f016';
-	margin-right: 5px;	
+	margin-right: 5px;
 }
 .tagcloud a {
 	border: 1px solid #41474F;
@@ -656,7 +656,7 @@ Comments
 	background-color: #fff;
 	font-size: 12px;
 	-webkit-transition: all 0.4s;
-	transition: all 0.4s;	
+	transition: all 0.4s;
 }
 a.comment-reply-link {
 	text-decoration: none;
@@ -813,7 +813,7 @@ Mobile menu
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    border-radius: 4px;  
+    border-radius: 4px;
     display: block;
 }
 /* Button Text */
@@ -879,7 +879,7 @@ Mobile menu
     color:#222;
 }
 .slicknav_nav .slicknav_txtnode {
-     margin-left:15px;   
+     margin-left:15px;
 }
 /*--------------------------------------------------------------
 Structure
@@ -895,7 +895,7 @@ Structure
 }
 .site-branding {
 	padding: 150px 45px;
-	clear: left; 
+	clear: left;
 }
 .site-title {
 	margin: 0;
@@ -996,7 +996,7 @@ Structure
 .site-header .search-expanded {
 	width: 200px;
 	right: 52px;
-	font-weight: 400;	
+	font-weight: 400;
 }
 .amplify-search {
 	position: relative;
@@ -1020,7 +1020,7 @@ Structure
 }
 .site-header .bottom-left .search-expanded {
 	width: 200px;
-	left: 52px;	
+	left: 52px;
 }
 
 .hide-it {
@@ -1075,7 +1075,7 @@ Portfolio page
 	position: relative;
 	overflow: hidden;
 	-webkit-transition: bottom 0.3s;
-	transition: bottom 0.3s;	
+	transition: bottom 0.3s;
 }
 .project img {
 	-webkit-transition: bottom 0.3s;
@@ -1093,7 +1093,7 @@ Portfolio page
 	width: 100%;
 	background-color: #FABE28;
 	-webkit-transition: bottom 0.3s;
-	transition: bottom 0.3s;	
+	transition: bottom 0.3s;
 	text-align: center;
 	font-size: 34px;
 }
@@ -1104,7 +1104,7 @@ Portfolio page
 	border-radius: 5px;
 	background-color: #222;
 	-webkit-transition: background-color 0.3s;
-	transition: background-color 0.3s;	
+	transition: background-color 0.3s;
 }
 .project-nav .fa:hover {
 	background-color: transparent;
@@ -1139,7 +1139,7 @@ Resume page
 	background-color: #FABE28;
 	color: #fff;
 	line-height: 1;
-	border-right: 1px solid #fff; 
+	border-right: 1px solid #fff;
 }
 .resume-nav {
 	margin-bottom: 45px;
@@ -1317,7 +1317,7 @@ Responsive
 @media only screen and (max-width: 1199px) {
 	.content-area {
 		width: 550px;
-	}	
+	}
 	.fullwidth {
 		width: 100%;
 	}
@@ -1368,7 +1368,7 @@ Responsive
 	.site-header .bottom-left .search-expanded {
 		left: auto;
 	}
-}	
+}
 @media only screen and (max-width: 991px) {
 	.content-area,
 	.widget-area {
@@ -1455,7 +1455,7 @@ Responsive
 	.job-date,
 	.school-date {
 		margin-bottom: 15px;
-	}	
+	}
 }
 @media only screen and (max-width: 320px) {
 	.fp-block {
