@@ -2,16 +2,16 @@
 
 class Amplify_Video extends WP_Widget {
 
-// constructor
-    function amplify_video() {
+	// constructor
+	function __construct() {
 		$widget_ops = array('classname' => 'amplify_video_widget', 'description' => __( 'Display an oEmbed video.', 'amplify') );
-        parent::WP_Widget(false, $name = __('Amplify: Video', 'amplify'), $widget_ops);
+		parent::__construct('video-widget', __('Amplify: Video', 'amplify'), $widget_ops);
 		$this->alt_option_name = 'amplify_video';
-		
+
 		add_action( 'save_post', array($this, 'flush_widget_cache') );
 		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
-		add_action( 'switch_theme', array($this, 'flush_widget_cache') );		
-    }
+		add_action( 'switch_theme', array($this, 'flush_widget_cache') );
+	}
 	
 	// widget form creation
 	function form($instance) {
