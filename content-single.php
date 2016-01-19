@@ -1,0 +1,28 @@
+<?php
+/**
+ * @package Amplify
+ */
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<?php if ( has_post_thumbnail() ) : ?>
+		<div class="single-thumb">
+			<?php the_post_thumbnail('amplify-thumb'); ?>
+		</div>	
+	<?php endif; ?>
+
+	<div class="entry-content">
+		<?php the_content(); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'amplify' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<?php amplify_entry_footer(); ?>
+	</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
