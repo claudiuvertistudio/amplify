@@ -137,8 +137,8 @@ function amplify_customize_register( $wp_customize ) {
         'type'        => 'number',
         'priority'    => 12,
         'section'     => 'amplify_header',
-        'label'       => __('Logo size', 'moesia'),
-        'description' => __('Max-width for the logo. Default 200px', 'moesia'),
+        'label'       => __('Logo size', 'amplify'),
+        'description' => __('Max-width for the logo. Default 200px', 'amplify'),
         'input_attrs' => array(
             'min'   => 50,
             'max'   => 600,
