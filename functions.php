@@ -207,9 +207,11 @@ function amplify_scripts() {
 
 	if ( get_theme_mod('blog_layout') == 'masonry' ) {
 
-		wp_enqueue_script( 'jquery-masonry');
+		wp_enqueue_script( 'jquery');
+		
+		wp_enqueue_script( 'masonry');
 
-		wp_enqueue_script( 'amplify-masonry-init', get_template_directory_uri() . '/js/masonry-init.js', array(), true );
+		wp_enqueue_script( 'amplify-masonry-init', get_template_directory_uri() . '/js/masonry-init.js', array('jquery', 'masonry'), true );
 	}
 
 	wp_enqueue_script( 'amplify-scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), true );
